@@ -17,7 +17,7 @@ Le nom et la marque sont centralisés dans [`src/shared/brand.ts`](src/shared/br
 - [Sécurité](#sécurité)
 - [Limites matérielles](#limites-matérielles)
 - [Problèmes connus](#problèmes-connus)
-- Documentation : [architecture](docs/ARCHITECTURE.md), [format de projet](docs/PROJECT_FORMAT.md), [format de profil](docs/PROFILE_FORMAT.md), [test avec du matériel réel](docs/HARDWARE.md), [roadmap](ROADMAP.md)
+- Documentation : [architecture](docs/ARCHITECTURE.md), [format de projet](docs/PROJECT_FORMAT.md), [format de profil](docs/PROFILE_FORMAT.md), [test avec du matériel réel](docs/HARDWARE.md), [roadmap](ROADMAP.md), [rapport niveau 2](docs/RAPPORT-NIVEAU-2.md)
 
 ## Prérequis
 - Node.js 22 ou plus récent (développé avec Node 24.16) et npm.
