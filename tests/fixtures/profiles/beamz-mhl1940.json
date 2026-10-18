@@ -1,0 +1,184 @@
+{
+  "id": "test-beamz-mhl1940",
+  "name": "MHL1940",
+  "manufacturer": "BeamZ",
+  "type": "moving-head-wash",
+  "fictional": false,
+  "physical": {
+    "panRange": 540,
+    "tiltRange": 220,
+    "beamAngle": 25,
+    "tiltMin": -110,
+    "tiltMax": 110,
+    "dimensions": {
+      "width": 0.4,
+      "height": 0.4,
+      "depth": 0.42
+    }
+  },
+  "modes": [
+    {
+      "name": "26Channels",
+      "channels": [
+        {
+          "name": "Pan",
+          "attribute": "pan",
+          "default": 128,
+          "default16": 21627
+        },
+        {
+          "name": "Pan fin",
+          "attribute": "pan",
+          "fine": true
+        },
+        {
+          "name": "Tilt",
+          "attribute": "tilt",
+          "default": 128
+        },
+        {
+          "name": "Tilt fin",
+          "attribute": "tilt",
+          "fine": true
+        },
+        {
+          "name": "Mode P/T",
+          "attribute": "panTiltMode"
+        },
+        {
+          "name": "Dimmer",
+          "attribute": "dimmer"
+        },
+        {
+          "name": "Shutter",
+          "attribute": "shutter",
+          "default": 255,
+          "ranges": [
+            {
+              "from": 0,
+              "to": 31,
+              "label": "Fermé",
+              "kind": "closed"
+            },
+            {
+              "from": 32,
+              "to": 63,
+              "label": "Strobe",
+              "kind": "strobe",
+              "hzFrom": 10,
+              "hzTo": 0.1
+            },
+            {
+              "from": 64,
+              "to": 255,
+              "label": "Ouvert",
+              "kind": "open"
+            }
+          ]
+        },
+        {
+          "name": "Rouge",
+          "attribute": "red"
+        },
+        {
+          "name": "Vert",
+          "attribute": "green"
+        },
+        {
+          "name": "Bleu",
+          "attribute": "blue"
+        },
+        {
+          "name": "Blanc",
+          "attribute": "white"
+        },
+        {
+          "name": "Zoom",
+          "attribute": "zoom"
+        },
+        {
+          "name": "Roue d'effets",
+          "attribute": "effectWheel"
+        },
+        {
+          "name": "Mode zoom",
+          "attribute": "zoomMode"
+        },
+        {
+          "name": "Fondu macro",
+          "attribute": "colorMacroFade"
+        },
+        {
+          "name": "Température",
+          "attribute": "colorTemperature"
+        },
+        {
+          "name": "Blanc chaud",
+          "attribute": "warmWhite",
+          "emitterColor": "#FFFFCC"
+        },
+        {
+          "name": "Anneau dimmer",
+          "attribute": "dimmer",
+          "cell": 1
+        },
+        {
+          "name": "Anneau strobe",
+          "attribute": "strobe",
+          "cell": 1
+        },
+        {
+          "name": "Anneau rouge",
+          "attribute": "red",
+          "cell": 1
+        },
+        {
+          "name": "Anneau vert",
+          "attribute": "green",
+          "cell": 1
+        },
+        {
+          "name": "Anneau bleu",
+          "attribute": "blue",
+          "cell": 1
+        },
+        {
+          "name": "Anneau fondu macro",
+          "attribute": "colorMacroFade",
+          "cell": 1
+        },
+        {
+          "name": "Anneau macros",
+          "attribute": "macro",
+          "cell": 1
+        },
+        {
+          "name": "Anneau vitesse macro",
+          "attribute": "macroSpeed",
+          "cell": 1
+        },
+        {
+          "name": "Reset",
+          "attribute": "control"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "name": "Main Module",
+      "cells": [],
+      "beam": "wash",
+      "geometry": "lens"
+    },
+    {
+      "name": "RGB Pix Ring",
+      "cells": [
+        1
+      ],
+      "beam": "led",
+      "angle": 12,
+      "geometry": "ring"
+    }
+  ]
+}

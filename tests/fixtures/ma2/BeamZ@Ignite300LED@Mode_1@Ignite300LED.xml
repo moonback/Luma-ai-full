@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<MA xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/2.8.123/MA.xsd" xmlns="http://schemas.malighting.de/grandma2/xml/MA" major_vers="3" minor_vers="7" stream_vers="0">
+    <FixtureType name="Ignite300LED" mode="Mode 1">
+        <InfoItems>
+            <Info type="Revision" date="2023-11-10T11:02:17">Converted GDTF to grandMA2 fixture type with Share Converter version 1.4.0</Info>
+            <Info type="Revision" date="2023-11-09T08:22:54">New fixture type based on Ignite300LED from BeamZ</Info>
+            <Info type="Revision" date="2023-11-09T12:19:55">V1.0</Info>
+            <Info type="Revision" date="2023-11-10T11:00:07">BeamZ Ignite300LED</Info>
+            <Info type="Revision" date="2023-11-10T11:01:14">Ignite300LED</Info>
+            <Info>The IGNITE300LED is a powerful Beam/Spot/Wash moving head with a powerful 300W bright white LED source and super smooth 3 phase motors. Equipped with 2 gobo wheels, 2 effect wheels and a rotating 3/8-facet prism to make stunning aerial effects in 8 colours plus white. The linear motorized zoom allows you to focus a beam up to 7° or open up to 32° to cover a wider area with ease. This true all-rounder can be controlled via RDM remote control, DMX, built-in automatic programs and presets, including a master/slave mode. Perfect for stage shows, productions, events, DJs, Bands, Venues, and more. A custom heavy-duty case is also available (option) to protect your fixtures during transport or storage.</Info>
+            <Info type="Revision" date="2023-11-10T11:02:24.987">Ignite300LED, Uploaded to Fixture Share.</Info>
+        </InfoItems>
+        <short_name>Ignite300LED</short_name>
+        <manufacturer>BeamZ</manufacturer>
+        <short_manufacturer>BeamZ</short_manufacturer>
+        <Modules>
+            <Module name="Main Module" class="Headmover" beamtype="Spot" beam_intensity="20000" beam_angle="10">
+                <Body>
+                    <Size x="0.245129" y="0.292574" z="2.7"/>
+                </Body>
+                <ChannelType coarse="1" fine="2" default="32768" MIB_fade_frames="549755813888" attribute="PAN" feature="POSITION" preset="POSITION">
+                    <ChannelFunction subattribute="PAN" attribute="PAN" feature="POSITION" preset="POSITION" from="-270" to="270" physfrom="-270" physto="270" min_dmx_24="0" max_dmx_24="16777215">
+                        <ChannelSet name="min" from_dmx="0" to_dmx="0"/>
+                        <ChannelSet name="center" from_dmx="32768" to_dmx="32768"/>
+                        <ChannelSet name="max" from_dmx="65535" to_dmx="65535"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="3" fine="4" default="32767" MIB_fade_frames="549755813888" attribute="TILT" feature="POSITION" preset="POSITION">
+                    <ChannelFunction subattribute="TILT" attribute="TILT" feature="POSITION" preset="POSITION" from="140" to="-140" physfrom="140" physto="-140" min_dmx_24="0" max_dmx_24="16777215">
+                        <ChannelSet name="max" from_dmx="0" to_dmx="0"/>
+                        <ChannelSet name="center" from_dmx="32767" to_dmx="32767"/>
+                        <ChannelSet name="min" from_dmx="65535" to_dmx="65535"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="5" default="0" attribute="POSITIONMSPEED" feature="Control" preset="Control">
+                    <ChannelFunction subattribute="POSITIONMSPEED" attribute="POSITIONMSPEED" feature="Control" preset="Control" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215"/>
+                </ChannelType>
+                <ChannelType coarse="6" default="0" attribute="DIM" feature="DIMMER" preset="DIMMER">
+                    <ChannelFunction subattribute="DIM" attribute="DIM" feature="DIMMER" preset="DIMMER" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215"/>
+                </ChannelType>
+                <ChannelType coarse="7" default="0" attribute="SHUTTER" feature="SHUTTER" preset="BEAM">
+                    <ChannelFunction subattribute="SHUTTER" attribute="SHUTTER" feature="SHUTTER" preset="BEAM" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215"/>
+                </ChannelType>
+                <ChannelType coarse="8" fine="9" default="0" attribute="COLOR1" feature="Color" preset="Color">
+                    <ChannelFunction subattribute="COLOR1" attribute="COLOR1" feature="Color" preset="Color" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215" wheel="1">
+                        <ChannelSet name="Open/White" from_dmx="0" to_dmx="19" slot_index="0"/>
+                        <ChannelSet name="Color 1" from_dmx="20" to_dmx="39" slot_index="1"/>
+                        <ChannelSet name="Color 2" from_dmx="40" to_dmx="59" slot_index="2"/>
+                        <ChannelSet name="Color 3" from_dmx="60" to_dmx="79" slot_index="3"/>
+                        <ChannelSet name="Color 4" from_dmx="80" to_dmx="99" slot_index="4"/>
+                        <ChannelSet name="Color 5" from_dmx="100" to_dmx="119" slot_index="5"/>
+                        <ChannelSet name="Color 6" from_dmx="120" to_dmx="139" slot_index="6"/>
+                        <ChannelSet name="Color 7" from_dmx="140" to_dmx="159" slot_index="7"/>
+                        <ChannelSet name="Color 8" from_dmx="160" to_dmx="179" slot_index="8"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="10" default="0" attribute="ZOOM" feature="FOCUS" preset="FOCUS">
+                    <ChannelFunction subattribute="ZOOM" attribute="ZOOM" feature="FOCUS" preset="FOCUS" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215"/>
+                </ChannelType>
+                <ChannelType coarse="11" fine="12" default="0" attribute="FOCUS" feature="FOCUS" preset="FOCUS">
+                    <ChannelFunction subattribute="FOCUS" attribute="FOCUS" feature="FOCUS" preset="FOCUS" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215"/>
+                </ChannelType>
+                <ChannelType coarse="13" default="0" attribute="GOBO1" feature="Gobo" preset="Gobo">
+                    <ChannelFunction subattribute="GOBO1" attribute="GOBO1" feature="Gobo" preset="Gobo" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215" wheel="2">
+                        <ChannelSet name="Open/White" from_dmx="0" to_dmx="11" slot_index="0"/>
+                        <ChannelSet name="Gobo 1" from_dmx="12" to_dmx="23" slot_index="1"/>
+                        <ChannelSet name="Gobo 2" from_dmx="24" to_dmx="35" slot_index="2"/>
+                        <ChannelSet name="Gobo 3" from_dmx="36" to_dmx="47" slot_index="3"/>
+                        <ChannelSet name="Gobo 4" from_dmx="48" to_dmx="59" slot_index="4"/>
+                        <ChannelSet name="Gobo 5" from_dmx="60" to_dmx="71" slot_index="5"/>
+                        <ChannelSet name="Gobo 6" from_dmx="72" to_dmx="83" slot_index="6"/>
+                        <ChannelSet name="Gobo 7" from_dmx="84" to_dmx="95" slot_index="7"/>
+                        <ChannelSet name="Gobo 1 Shake" from_dmx="96" to_dmx="111" slot_index="8"/>
+                        <ChannelSet name="Gobo 2 Shake" from_dmx="112" to_dmx="127"/>
+                        <ChannelSet name="Gobo 3 Shake" from_dmx="128" to_dmx="143"/>
+                        <ChannelSet name="Gobo 4 Shake" from_dmx="144" to_dmx="159"/>
+                        <ChannelSet name="Gobo 5 Shake" from_dmx="160" to_dmx="175"/>
+                        <ChannelSet name="Gobo 6 Shake" from_dmx="176" to_dmx="191"/>
+                        <ChannelSet name="Gobo 7 Shake" from_dmx="192" to_dmx="207"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="14" default="0" attribute="Gobo1PosRotate" feature="Gobo" preset="Gobo">
+                    <ChannelFunction subattribute="GOBO1_ROT" attribute="Gobo1PosRotate" feature="Gobo" preset="Gobo" from="0" to="100" physfrom="0" physto="0.16666666666666666" min_dmx_24="0" max_dmx_24="16777215" wheel="1"/>
+                </ChannelType>
+                <ChannelType coarse="15" default="0" attribute="GOBO2" feature="Gobo" preset="Gobo">
+                    <ChannelFunction subattribute="GOBO2" attribute="GOBO2" feature="Gobo" preset="Gobo" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215" wheel="3">
+                        <ChannelSet name="Open/White" from_dmx="0" to_dmx="7" slot_index="0"/>
+                        <ChannelSet name="Gobo 1" from_dmx="8" to_dmx="15" slot_index="1"/>
+                        <ChannelSet name="Gobo 2" from_dmx="16" to_dmx="23" slot_index="2"/>
+                        <ChannelSet name="Gobo 3" from_dmx="24" to_dmx="31" slot_index="3"/>
+                        <ChannelSet name="Gobo 4" from_dmx="32" to_dmx="39" slot_index="4"/>
+                        <ChannelSet name="Gobo 5" from_dmx="40" to_dmx="47" slot_index="5"/>
+                        <ChannelSet name="Gobo 6" from_dmx="48" to_dmx="55" slot_index="6"/>
+                        <ChannelSet name="Gobo 7" from_dmx="56" to_dmx="63" slot_index="7"/>
+                        <ChannelSet name="Gobo 8" from_dmx="64" to_dmx="71" slot_index="8"/>
+                        <ChannelSet name="Gobo 9" from_dmx="72" to_dmx="79" slot_index="9"/>
+                        <ChannelSet name="Gobo 1 Shake" from_dmx="80" to_dmx="94"/>
+                        <ChannelSet name="Gobo 2 Shake" from_dmx="95" to_dmx="109"/>
+                        <ChannelSet name="Gobo 3 Shake" from_dmx="110" to_dmx="124"/>
+                        <ChannelSet name="Gobo 4 Shake" from_dmx="125" to_dmx="139"/>
+                        <ChannelSet name="Gobo 5 Shake" from_dmx="140" to_dmx="154"/>
+                        <ChannelSet name="Gobo 6 Shake" from_dmx="155" to_dmx="169"/>
+                        <ChannelSet name="Gobo 7 Shake" from_dmx="170" to_dmx="184"/>
+                        <ChannelSet name="Gobo 8 Shake" from_dmx="185" to_dmx="199"/>
+                        <ChannelSet name="Gobo 9 Shake" from_dmx="200" to_dmx="214"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="16" default="0" attribute="FROST" feature="BEAM1" preset="BEAM">
+                    <ChannelFunction subattribute="FROST" attribute="FROST" feature="BEAM1" preset="BEAM" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215">
+                        <ChannelSet name="Frost out" from_dmx="0" to_dmx="63"/>
+                        <ChannelSet name="Frost into" from_dmx="64" to_dmx="255"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="17" default="0" attribute="PRISMA1" feature="Beam" preset="Beam">
+                    <ChannelFunction subattribute="PRISMA1" attribute="PRISMA1" feature="Beam" preset="Beam" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215">
+                        <ChannelSet name="Prism all out" from_dmx="0" to_dmx="63"/>
+                        <ChannelSet name="Prism1 into Prism2 out" from_dmx="64" to_dmx="127"/>
+                        <ChannelSet name="Prism2 into Prism1 out" from_dmx="128" to_dmx="191"/>
+                        <ChannelSet name="Prism1Prism2 into " from_dmx="192" to_dmx="255"/>
+                    </ChannelFunction>
+                </ChannelType>
+                <ChannelType coarse="18" default="0" attribute="PRISMA_POS" feature="Beam" preset="Beam">
+                    <ChannelFunction subattribute="PRISMA_POS" attribute="PRISMA_POS" feature="Beam" preset="Beam" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215" wheel="1"/>
+                </ChannelType>
+                <ChannelType coarse="19" default="0" attribute="Prism1PosRotate" feature="Beam" preset="Beam">
+                    <ChannelFunction subattribute="PRISMA_ROT" attribute="Prism1PosRotate" feature="Beam" preset="Beam" from="0" to="100" physfrom="0" physto="0.16666666666666666" min_dmx_24="0" max_dmx_24="16777215" wheel="1"/>
+                </ChannelType>
+                <ChannelType coarse="20" default="0" attribute="CONTROL" feature="Control" preset="Control">
+                    <ChannelFunction subattribute="CONTROL" attribute="CONTROL" feature="Control" preset="Control" from="0" to="100" physfrom="0" physto="1" min_dmx_24="0" max_dmx_24="16777215">
+                        <ChannelSet name="No Function" from_dmx="0" to_dmx="19"/>
+                        <ChannelSet name="Auto1" from_dmx="20" to_dmx="39"/>
+                        <ChannelSet name="Auto2" from_dmx="40" to_dmx="59"/>
+                        <ChannelSet name="No function" from_dmx="60" to_dmx="199"/>
+                        <ChannelSet name="Reset All" from_dmx="200" to_dmx="219"/>
+                        <ChannelSet name="No Function" from_dmx="220" to_dmx="255"/>
+                    </ChannelFunction>
+                </ChannelType>
+            </Module>
+        </Modules>
+        <Instances>
+            <Instance module_index="0" patch="1" locked="true"/>
+        </Instances>
+        <Wheels>
+            <Wheel index="0" preset="Color" feature="Color" attribute="COLOR1" subattribute="COLOR1">
+                <Slot index="0" media_name="open" r="255" g="255" b="255"/>
+                <Slot index="1" media_name="Blue" r="13" g="7" b="224"/>
+                <Slot index="2" media_name="Orange" r="255" g="113" b="0"/>
+                <Slot index="3" media_name="Magenta" r="255" g="38" b="232"/>
+                <Slot index="4" media_name="Cyan" r="0" g="255" b="255"/>
+                <Slot index="5" media_name="Deep Red" r="171" g="0" b="17"/>
+                <Slot index="6" media_name="Green" r="0" g="212" b="2"/>
+                <Slot index="7" media_name="Purple" r="220" g="0" b="255"/>
+                <Slot index="8" media_name="Yellow" r="255" g="255" b="0"/>
+            </Wheel>
+            <Wheel index="1" preset="Gobo" feature="Gobo" attribute="GOBO1" subattribute="GOBO1">
+                <Slot index="0" media_name="open"/>
+                <Slot index="1" media_name="Gobo 1" media_filename="BeamZ/Gobo1Rot.png">
+                    
+                </Slot>
+                <Slot index="2" media_name="Gobo 2" media_filename="BeamZ/Gobo2Rot.png">
+                    
+                </Slot>
+                <Slot index="3" media_name="Gobo 3" media_filename="BeamZ/Gobo3Rot.png">
+                    
+                </Slot>
+                <Slot index="4" media_name="Gobo 4" media_filename="BeamZ/Gobo4Rot.png">
+                    
+                </Slot>
+                <Slot index="5" media_name="Gobo 5" media_filename="BeamZ/Gobo5Rot.png">
+                    
+                </Slot>
+                <Slot index="6" media_name="Gobo 6" media_filename="BeamZ/Gobo6Rot.png">
+                    
+                </Slot>
+                <Slot index="7" media_name="Gobo 7" media_filename="BeamZ/Gobo7Rot.png">
+                    
+                </Slot>
+                <Slot index="8" media_name="Gobo 8" media_filename="BeamZ/Gobo8Rot.png">
+                    
+                </Slot>
+            </Wheel>
+            <Wheel index="2" preset="Gobo" feature="Gobo" attribute="GOBO2" subattribute="GOBO2">
+                <Slot index="0" media_name="open"/>
+                <Slot index="1" media_name="Gobo 1" media_filename="BeamZ/Gobo1.png">
+                    
+                </Slot>
+                <Slot index="2" media_name="Gobo 2" media_filename="BeamZ/Gobo2.png">
+                    
+                </Slot>
+                <Slot index="3" media_name="Gobo 3" media_filename="BeamZ/Gobo3.png">
+                    
+                </Slot>
+                <Slot index="4" media_name="Gobo 4" media_filename="BeamZ/Gobo4.png">
+                    
+                </Slot>
+                <Slot index="5" media_name="Gobo 5" media_filename="BeamZ/Gobo5.png">
+                    
+                </Slot>
+                <Slot index="6" media_name="Gobo 6" media_filename="BeamZ/Gobo6.png">
+                    
+                </Slot>
+                <Slot index="7" media_name="Gobo 7" media_filename="BeamZ/Gobo7.png">
+                    
+                </Slot>
+                <Slot index="8" media_name="Gobo 8" media_filename="BeamZ/Gobo8.png">
+                    
+                </Slot>
+                <Slot index="9" media_name="Gobo 9" media_filename="BeamZ/Gobo9.png">
+                    
+                </Slot>
+            </Wheel>
+        </Wheels>
+    </FixtureType>
+</MA>

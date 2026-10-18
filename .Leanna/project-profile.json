@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "projectId": "luma-ai_uhc9vo",
+  "projectName": "Luma-ai",
+  "detected": {
+    "packageManager": "npm",
+    "frameworks": [
+      "electron",
+      "react",
+      "vite",
+      "vitest"
+    ],
+    "languages": [
+      "typescript"
+    ],
+    "commands": {
+      "build": "npm run build",
+      "test": "npm run test",
+      "lint": "npm run lint",
+      "dev": "npm run dev",
+      "typecheck": "npm run typecheck"
+    },
+    "hasTests": true,
+    "hasTsConfig": true,
+    "isGit": false
+  },
+  "strategies": {
+    "effective": [],
+    "failing": [],
+    "playbooks": []
+  },
+  "knowledge": {
+    "totalFacts": 0,
+    "byCategory": {},
+    "conventions": [],
+    "architecture": []
+  },
+  "preferences": {},
+  "missionStats": {
+    "completed": 0,
+    "failed": 0
+  },
+  "createdAt": "2026-10-17T20:21:13.656Z",
+  "updatedAt": "2026-10-17T21:13:16.818Z"
+}

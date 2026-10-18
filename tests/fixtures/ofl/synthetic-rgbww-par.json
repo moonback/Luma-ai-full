@@ -1,0 +1,14 @@
+{
+  "name": "Synthetic RGBWW Par",
+  "categories": ["Color Changer"],
+  "availableChannels": {
+    "Dimmer": { "capability": { "type": "Intensity" } },
+    "Red": { "capability": { "type": "ColorIntensity", "color": "Red" } },
+    "Green": { "capability": { "type": "ColorIntensity", "color": "Green" } },
+    "Blue": { "capability": { "type": "ColorIntensity", "color": "Blue" } },
+    "Warm White": { "capability": { "type": "ColorIntensity", "color": "Warm White" } },
+    "Cold White": { "capability": { "type": "ColorIntensity", "color": "Cold White" } },
+    "Lime": { "capability": { "type": "ColorIntensity", "color": "Lime" } }
+  },
+  "modes": [{ "name": "7-channel", "channels": ["Dimmer", "Red", "Green", "Blue", "Warm White", "Cold White", "Lime"] }]
+}

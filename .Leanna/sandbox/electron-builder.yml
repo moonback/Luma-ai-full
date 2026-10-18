@@ -1,0 +1,23 @@
+appId: ai.luma.dmx
+productName: Luma AI DMX
+directories:
+  output: release
+  buildResources: resources
+files:
+  - out/**
+  - package.json
+# Native serial-port bindings must stay outside the asar archive.
+asarUnpack:
+  - node_modules/@serialport/**
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  artifactName: ${productName}-Setup-${version}.${ext}
+linux:
+  target: [AppImage]
+mac:
+  target: [dmg]
